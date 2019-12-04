@@ -7,12 +7,12 @@ Demo available at http://login-form-angular.aspenhollyer.com.s3-website-us-east-
 This simple Angular application features a login form with front-end validation & unit tests.
 
 ## Project Requirements
-- [ ] Email needs to be valid
-- [ ] Password needs to be at least 8 characters.
-- [ ] There needs to be validation messages that display when user doesn't enter correct data.
-- [ ] Include link to reset password page
-- [ ] Include link to sign up page
-- [ ] At least 1 test to verify one of the functions works correctly.
+- [x] Email needs to be valid
+- [x] Password needs to be at least 8 characters.
+- [x] There needs to be validation messages that display when user doesn't enter correct data.
+- [x] Include link to reset password page
+- [x] Include link to sign up page
+- [x] At least 1 test to verify one of the functions works correctly.
 
 ---
 
