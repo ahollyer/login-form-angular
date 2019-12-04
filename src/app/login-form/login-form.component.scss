@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  button {
+    background-color: $primary;
+    border: none;
+    border-radius: $border-radius;
+    color: $white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  input {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    display: block;
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}

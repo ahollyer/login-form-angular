@@ -6,19 +6,18 @@
 $black: #1b1c25;
 $white: #ffffff;
 
-$primary: #2b3487;
-$secondary: #e8084d;
-
+$primary: #f63;
 $background-primary: #fafafa;
 $background-secondary: #f5f5f5;
 
 $success: #18db71;
-// $warning: #ffb300;
+$warning: #ffb300;
 $error: #ec2125;
 
 $border-color: #ddd;
 $header-color: #555;
 $link-color: #f63;
+$link-hover-color: #e53900;
 
 /**********************************************************************
                               Typography
@@ -29,3 +28,4 @@ $header-font-stack: Arvo, 'Open Sans', Arial, sans-serif;
 /**********************************************************************
                                 Layout
 ***********************************************************************/
+$border-radius: 5px;
