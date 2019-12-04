@@ -1,5 +1,22 @@
-<form>
-  <input type="text" placeholder="Email">
-  <input type="text" placeholder="Password">
-  <button type="submit">Login</button>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <!-- Email Input -->
+  <div>
+    <input type="email" formControlName="email" placeholder="Email" required>
+    <label *ngIf="!f.email.pristine && !f.email.valid">
+      <span class="error" *ngIf="f.email.errors?.required">This field is required.</span>
+      <span class="error" *ngIf="f.email.errors?.email">Please enter a valid email address.</span>
+    </label>
+  </div>
+  <!-- Password Input -->
+  <div>
+    <input type="password" formControlName="password" placeholder="Password" required>
+    <label *ngIf="!f.password.pristine && !f.password.valid">
+      <span class="error" *ngIf="f.password.errors?.required">This field is required.</span>
+      <span class="error" *ngIf="f.password.errors?.minlength">Password must be at least 8 characters.</span>
+    </label>
+  </div>
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
 </form>
+
+<!-- Uncomment for debugging -->
+<!-- <pre>{{ loginForm.value | json }}</pre> -->

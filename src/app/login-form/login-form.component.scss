@@ -13,6 +13,11 @@ form {
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
+
+    &:disabled {
+      background: graytext;
+      border: 1px solid $border-color;
+    }
   }
 
   input {
@@ -23,6 +28,26 @@ form {
     padding: 8px;
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: -8px;
+  }
+
+  .error {
+    font-size: .8rem;
+    color: $error;
+    margin-bottom: 10px;
+  }
+
+  .ng-valid[required], .ng-valid.required {
+    border-left: 5px solid $success;
+  }
+
+  .ng-dirty.ng-invalid:not(form)  {
+    border-left: 5px solid $error;
   }
 
 }
