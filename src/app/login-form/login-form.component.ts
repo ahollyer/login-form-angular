@@ -8,6 +8,7 @@ import { UserService } from '../user.service';
   styleUrls: ['./login-form.component.scss']
 })
 export class LoginFormComponent implements OnInit {
+  showLoginSuccess: boolean = false;
 
   constructor( private fb: FormBuilder,
                private userService: UserService ) { }
@@ -38,8 +39,9 @@ export class LoginFormComponent implements OnInit {
 
     this.userService.login(this.loginForm.value).subscribe(
       res => {
-        // TODO: Handle success
         console.log("Got response", res)
+        // TODO: Handle login success
+        this.showLoginSuccess = true;
       },
       err => {
         // TODO: Handle error

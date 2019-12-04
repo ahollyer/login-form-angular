@@ -18,5 +18,9 @@
   <button type="submit" [disabled]="!loginForm.valid">Login</button>
 </form>
 
+<div *ngIf="showLoginSuccess">
+  <span class="success">Success. You are now logged in :)</span>
+</div>
+
 <!-- Uncomment for debugging -->
 <!-- <pre>{{ loginForm.value | json }}</pre> -->

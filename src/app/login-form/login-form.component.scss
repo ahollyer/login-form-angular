@@ -45,7 +45,6 @@ form {
   .error {
     font-size: .8rem;
     color: $error;
-    margin-bottom: 10px;
   }
 
   .ng-valid[required], .ng-valid.required {
@@ -56,4 +55,9 @@ form {
     border-left: 5px solid $error;
   }
 
+}
+
+.success {
+  font-weight: 700;
+  color: $success;
 }
