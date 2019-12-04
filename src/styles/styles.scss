@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+
+@import './variables';
+
+*, body {
+  color: rgba($black, .8);
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+a {
+  color: $link-color;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}

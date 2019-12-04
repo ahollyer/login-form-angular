@@ -1,0 +1,46 @@
+@import '../styles/variables';
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .panel {
+    background: $background-primary;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba($black, .05);
+    margin: 40px;
+    max-width: 800px;
+    min-width: 350px;
+    width: 50vw;
+
+    header {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    section {
+      background: $white;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer {
+      display: flex;
+      padding: 10px;
+    }
+
+  }
+
+  .help-text {
+    font-family: $header-font-stack;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+}
