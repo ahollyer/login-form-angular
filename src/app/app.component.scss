@@ -29,6 +29,10 @@ main {
       background: $white;
       display: flex;
       justify-content: center;
+
+      app-login-form {
+        width: 100%;
+      }
     }
 
     footer {
